@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@design..css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PaymentsController">
+   <children>
+      <TableView fx:id="paymentTable" prefHeight="600.0" prefWidth="496.0">
+        <columns>
+          <TableColumn fx:id="paymentIDCol" prefWidth="113.91045707464218" text="Payment ID" />
+          <TableColumn fx:id="libraryIDCol" prefWidth="121.79106903076172" text="Library ID" />
+            <TableColumn fx:id="amountCol" prefWidth="122.50752258300781" text="Amount" />
+            <TableColumn fx:id="dateCol" prefWidth="141.13427734375" text="Date" />
+        </columns>
+      </TableView>
+      <Button fx:id="back" layoutX="732.0" layoutY="14.0" mnemonicParsing="false" onAction="#Control" prefHeight="27.0" prefWidth="54.0" text="Back" />
+      <TextField fx:id="libraryIDField" layoutX="579.0" layoutY="233.0" onAction="#searchBasedOnLibraryID" promptText="LIBRARY ID" />
+      <Button fx:id="searchPayment" layoutX="628.0" layoutY="300.0" mnemonicParsing="false" onAction="#searchBasedOnLibraryID" text="Search" />
+      <Button fx:id="allPayments" layoutX="605.0" layoutY="125.0" mnemonicParsing="false" onAction="#selectAllPayments" text="All Payments" />
+   </children>
+</AnchorPane>

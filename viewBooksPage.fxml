@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" stylesheets="@design..css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewBookController">
+   <children>
+      <TableView fx:id="booksTable" layoutX="3.0" layoutY="13.0" prefHeight="600.0" prefWidth="900.0">
+        <columns>
+          <TableColumn fx:id="ISBNCol" prefWidth="71.6417829990387" text="ISBN" />
+          <TableColumn fx:id="TitleCol" prefWidth="144.00000762939453" text="Title" />
+            <TableColumn fx:id="SubjectCol" prefWidth="99.58212280273438" text="Subject" />
+            <TableColumn fx:id="AuthorCol" prefWidth="121.07464599609375" text="Author" />
+            <TableColumn fx:id="PublicationCol" prefWidth="122.50750732421875" text="Publication" />
+            <TableColumn fx:id="PriceCol" prefWidth="69.49252319335938" text="Price" />
+            <TableColumn fx:id="NoOfPagesCol" prefWidth="80.23876953125" text="No. of Pages" />
+            <TableColumn fx:id="RackCol" maxWidth="137.55218505859375" prefWidth="87.40301513671875" text="Rack No." />
+            <TableColumn fx:id="EditionCol" prefWidth="104.5970458984375" text="Edition No." />
+        </columns>
+      </TableView>
+      <TextField fx:id="TitleField" layoutX="936.0" layoutY="208.0" promptText="TITLE" />
+      <TextField fx:id="ISBNField" layoutX="936.0" layoutY="126.0" promptText="ISBN" />
+      <TextField fx:id="SubjectField" layoutX="936.0" layoutY="390.0" promptText="SUBJECT" />
+      <TextField fx:id="AuthorField" layoutX="936.0" layoutY="300.0" promptText="AUTHOR" />
+      <Button layoutX="978.0" layoutY="64.0" mnemonicParsing="false" onAction="#allBooks" text="All Books" />
+      <Button fx:id="search" layoutX="978.0" layoutY="485.0" mnemonicParsing="false" onAction="#Control" prefHeight="27.0" prefWidth="68.0" text="Search" />
+      <Button fx:id="back" layoutX="1120.0" layoutY="13.0" mnemonicParsing="false" onAction="#Control" text="BACK" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@design..css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StudentController">
+   <children>
+      <Label layoutX="227.0" layoutY="45.0" prefHeight="25.0" prefWidth="119.0" text="Your Library ID is ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="libraryIDField" layoutX="365.0" layoutY="45.0" prefHeight="25.0" prefWidth="102.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="115.0" text="Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="181.0" text="Address">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="258.0" text="Email">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="320.0" text="Mobile Number">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="back1" layoutX="717.0" layoutY="32.0" mnemonicParsing="false" onAction="#Control" text="Back" />
+      <Button fx:id="registerButton" layoutX="340.0" layoutY="421.0" mnemonicParsing="false" onAction="#insertStudents" text="Register" />
+      <TextField fx:id="nameField" layoutX="256.0" layoutY="112.0" onAction="#insertStudents" />
+      <TextField fx:id="emailField" layoutX="264.0" layoutY="255.0" onAction="#insertStudents" />
+      <TextField fx:id="mobileField" layoutX="295.0" layoutY="317.0" onAction="#insertStudents" />
+      <TextArea fx:id="addressArea" layoutX="239.0" layoutY="169.0" prefHeight="58.0" prefWidth="201.0" />
+   </children>
+</AnchorPane>

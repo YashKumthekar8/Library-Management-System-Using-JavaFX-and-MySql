@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@design..css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="loginButton" layoutX="662.0" layoutY="322.0" mnemonicParsing="false" onAction="#login" prefHeight="27.0" prefWidth="63.0" text="Login">
+         <font>
+            <Font name="Arialbold" size="14" />
+         </font>
+      </Button>
+      <Label layoutX="259.0" layoutY="29.0" prefHeight="34.0" prefWidth="332.0" text="Welcome to the Library" textAlignment="CENTER" textFill="#10e900">
+         <font>
+            <Font name="Arialbold" size="30.0" />
+         </font></Label>
+      <ImageView fx:id="imageView" fitHeight="338.0" fitWidth="592.0" layoutX="10.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Library image.jpg" />
+         </image></ImageView>
+      <TextField fx:id="userIDField" layoutX="618.0" layoutY="143.0" onAction="#login" prefHeight="27.0" prefWidth="168.0" promptText="User ID">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <PasswordField fx:id="passwordField" layoutX="618.0" layoutY="239.0" onAction="#login" prefHeight="27.0" prefWidth="168.0" promptText="Password">
+         <font>
+            <Font size="13.0" />
+         </font></PasswordField>
+      <Label fx:id="loginMessage" layoutX="316.0" layoutY="477.0" prefHeight="29.0" prefWidth="150.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

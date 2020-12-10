@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@design..css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StudentController">
+   <children>
+      <TableView fx:id="studentTable" prefHeight="400.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="libraryIDCol" prefWidth="67.34329414367676" text="Library ID" />
+          <TableColumn fx:id="nameCol" prefWidth="154.02986907958984" text="Name" />
+            <TableColumn fx:id="addressCol" prefWidth="242.8656768798828" text="Address" />
+            <TableColumn fx:id="emailNoCol" prefWidth="202.74624633789062" text="Email" />
+            <TableColumn fx:id="mobileNoCol" prefWidth="133.2537841796875" text="Mobile Number" />
+        </columns>
+      </TableView>
+      <TextField fx:id="libraryIDFieldSearch" layoutX="77.0" layoutY="487.0" onAction="#selectStudentsBasedOnLibraryID" promptText="Library ID" />
+      <TextField fx:id="nameFieldSearch" layoutX="290.0" layoutY="487.0" onAction="#selectStudentsBasedOnName" promptText="Name" />
+      <Button fx:id="searchLibraryID" layoutX="126.0" layoutY="537.0" mnemonicParsing="false" onAction="#selectStudentsBasedOnLibraryID" text="Search" />
+      <Button fx:id="back" layoutX="722.0" layoutY="559.0" mnemonicParsing="false" onAction="#Control" prefHeight="27.0" prefWidth="54.0" text="Back" />
+      <Button layoutX="366.0" layoutY="411.0" mnemonicParsing="false" onAction="#selectStudentsAll" text="All Students" />
+      <Button fx:id="searchName" layoutX="339.0" layoutY="537.0" mnemonicParsing="false" onAction="#selectStudentsBasedOnName" text="Search" />
+   </children>
+</AnchorPane>

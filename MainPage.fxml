@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@design..css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="back" layoutX="663.0" layoutY="32.0" mnemonicParsing="false" onAction="#mainPage" prefHeight="32.0" prefWidth="72.0" text="Back" />
+      <Button fx:id="addBooks" layoutX="217.0" layoutY="144.0" mnemonicParsing="false" onAction="#mainPage" prefWidth="120.0" text="Add Books" />
+      <Button fx:id="viewBooks" layoutX="455.0" layoutY="144.0" mnemonicParsing="false" onAction="#mainPage" prefWidth="120.0" text="View Books" />
+      <Button fx:id="issueBooks" layoutX="215.0" layoutY="258.0" mnemonicParsing="false" onAction="#mainPage" prefWidth="120.0" text="Issue Books" />
+      <Button fx:id="viewIssuedBooks" layoutX="455.0" layoutY="258.0" mnemonicParsing="false" onAction="#mainPage" prefHeight="29.0" prefWidth="128.0" text="View Issued Books" />
+      <Button fx:id="returnBooks" layoutX="213.0" layoutY="371.0" mnemonicParsing="false" onAction="#mainPage" prefWidth="120.0" text="Return Book" />
+      <Button fx:id="payments" layoutX="459.0" layoutY="371.0" mnemonicParsing="false" onAction="#mainPage" prefWidth="120.0" text="Payments" />
+      <Button fx:id="registerStudent" layoutX="213.0" layoutY="469.0" mnemonicParsing="false" onAction="#mainPage" prefWidth="120.0" text="Register Student" />
+      <Button fx:id="studentDetails" layoutX="455.0" layoutY="469.0" mnemonicParsing="false" onAction="#mainPage" prefWidth="120.0" text="Student Details" />
+   </children>
+</AnchorPane>

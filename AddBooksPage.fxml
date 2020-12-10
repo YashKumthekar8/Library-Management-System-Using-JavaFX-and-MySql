@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@design..css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddBooksPageController">
+   <children>
+      <TextField fx:id="TitleField" layoutX="638.0" layoutY="348.0" promptText="TITLE" />
+      <TextField fx:id="ISBNField" layoutX="638.0" layoutY="417.0" promptText="ISBN" />
+      <Button fx:id="search" layoutX="678.0" layoutY="497.0" mnemonicParsing="false" onAction="#Control" prefHeight="32.0" prefWidth="72.0" text="Search" />
+      <TextField fx:id="ISBNRemove" layoutX="212.0" layoutY="417.0" promptText="ISBN" />
+      <Button fx:id="delete" layoutX="261.0" layoutY="497.0" mnemonicParsing="false" onAction="#Control" prefHeight="32.0" prefWidth="90.0" text="Delete Book" />
+      <TextField fx:id="TitleAdd" layoutX="32.0" layoutY="104.0" prefHeight="27.0" prefWidth="125.0" promptText="TITLE" />
+      <TextField fx:id="subject" layoutX="238.0" layoutY="104.0" prefHeight="27.0" prefWidth="125.0" promptText="SUBJECT" />
+      <TextField fx:id="publication" layoutX="413.0" layoutY="104.0" prefHeight="27.0" prefWidth="115.0" promptText="PUBLICATION" />
+      <TextField fx:id="noOfPages" layoutX="471.0" layoutY="202.0" prefHeight="27.0" prefWidth="125.0" promptText="No. Of Pages" />
+      <TextField fx:id="author" layoutX="596.0" layoutY="104.0" prefHeight="27.0" prefWidth="125.0" promptText="Author" />
+      <TextField fx:id="rack" layoutX="243.0" layoutY="202.0" prefHeight="27.0" prefWidth="125.0" promptText="Rack No." />
+      <TextField fx:id="edition" layoutX="42.0" layoutY="196.0" prefHeight="27.0" prefWidth="125.0" promptText="Edition No." />
+      <Button fx:id="add" layoutX="269.0" layoutY="267.0" mnemonicParsing="false" onAction="#Control" stylesheets="@design..css" text="Add Book" />
+      <Button fx:id="back" layoutX="719.0" layoutY="14.0" mnemonicParsing="false" onAction="#Control" prefHeight="32.0" prefWidth="72.0" text="Back" />
+      <TextField fx:id="price" layoutX="615.0" layoutY="202.0" promptText="Price" />
+   </children>
+</AnchorPane>
